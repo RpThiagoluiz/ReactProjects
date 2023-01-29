@@ -20,12 +20,15 @@ export const Home = () => {
     <HighlightPokemonProvider>
       <S.Wrapper>
         {loading && <Loading />}
+
         {response !== null && !loading && (
-          <div>
-            <PokemonList pokemons={response.results} />
-          </div>
+          <>
+            <PokemonHighlight />
+            <div>
+              <PokemonList pokemons={response.results} />
+            </div>
+          </>
         )}
-        <PokemonHighlight />
       </S.Wrapper>
     </HighlightPokemonProvider>
   );
