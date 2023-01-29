@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import * as S from "./styles";
 import { PokemonTypeIcon } from "@/components/PokemonTypeIcon";
 import { Loading } from "@/components/Loading";
+import { useHighlightPokemon } from "@/hooks/useHighlightPokemon";
 
 interface Props {
   pokemon: PokemonGenericResponse;
@@ -18,14 +19,15 @@ export const PokemonCard = ({ pokemon }: Props) => {
     url: pokemon.url,
   });
 
+  const { handleHighlight } = useHighlightPokemon();
+
   useEffect(() => {
     fetchData();
   }, []);
 
   const handleSelectedPokemon = () => {
     if (loading) return;
-
-    console.log(pokemonDetails);
+    pokemonDetails && handleHighlight(pokemonDetails);
   };
 
   return (
