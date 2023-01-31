@@ -20,7 +20,7 @@ export const useFetchData = ({ url }: Props) => {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 500);
+      }, 1500);
     }
   };
 

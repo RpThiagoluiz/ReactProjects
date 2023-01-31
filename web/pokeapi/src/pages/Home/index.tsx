@@ -18,9 +18,12 @@ export const Home = () => {
 
   return (
     <HighlightPokemonProvider>
+      {loading && (
+        <S.LoadingContainer>
+          <Loading />
+        </S.LoadingContainer>
+      )}
       <S.Wrapper>
-        {loading && <Loading />}
-
         {response !== null && !loading && (
           <>
             <PokemonHighlight />

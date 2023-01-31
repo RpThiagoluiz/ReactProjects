@@ -20,7 +20,7 @@ export const useFetchPokemonDetails = ({ url }: Props) => {
     } finally {
       setTimeout(() => {
         setLoading(false);
-      }, 350);
+      }, 1500);
     }
   };
 

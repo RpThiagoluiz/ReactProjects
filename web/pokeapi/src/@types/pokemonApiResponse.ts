@@ -6,7 +6,15 @@ export type PokemonGenericResponse = {
 type PokemonType = {
   slot: number;
   type: {
-    name: string;
+    name:
+      | "grass"
+      | "poison"
+      | "fire"
+      | "water"
+      | "bug"
+      | "normal"
+      | "flying"
+      | "default";
     url: string;
   };
 };

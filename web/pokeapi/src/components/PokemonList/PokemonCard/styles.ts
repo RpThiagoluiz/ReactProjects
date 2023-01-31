@@ -11,6 +11,8 @@ export const Container = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.18);
 
   transition: all 0.3s ease-in-out;
+  height: 250px;
+  width: 350px;
 
   &:hover {
     transform: scale(1.15);
