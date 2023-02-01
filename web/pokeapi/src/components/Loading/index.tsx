@@ -6,7 +6,5 @@ interface Props {
 }
 
 export const Loading = ({ size = 120 }: Props) => (
-  <S.LoadingContainer>
-    <S.Image src={PokeballSvg} alt="Pokeball Image" size={size} />
-  </S.LoadingContainer>
+  <S.Image src={PokeballSvg} alt="Pokeball Image" size={size} />
 );

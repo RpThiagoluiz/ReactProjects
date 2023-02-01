@@ -9,13 +9,6 @@ const bounce = keyframes`
   }
 `;
 
-export const LoadingContainer = styled.div`
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  margin: 0 auto;
-`;
-
 export const Image = styled.img<{ size: number }>`
   animation: ${bounce} 2s infinite;
   width: ${({ size }) => size}px;

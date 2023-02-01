@@ -43,9 +43,6 @@ export const ContainerPokemonImage = styled.div`
 `;
 
 export const Image = styled.img`
-  position: relative;
-  bottom: -5em;
-  left: 35em;
   width: 50em;
   filter: ${({ theme }) => `drop-shadow(0 -2mm 4mm ${theme.COLORS.BORDER})`};
 `;

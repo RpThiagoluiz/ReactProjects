@@ -27,6 +27,7 @@ export const Home = () => {
         {response !== null && !loading && (
           <>
             <PokemonHighlight />
+
             <div>
               <PokemonList pokemons={response.results} />
             </div>

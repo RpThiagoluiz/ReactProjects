@@ -34,7 +34,9 @@ export const PokemonCard = ({ pokemon }: Props) => {
     <S.Container onClick={handleSelectedPokemon}>
       {loading ? (
         <S.LoadingContainer>
-          <S.Name>{pokemon.name} Info...</S.Name>
+          <S.Name>
+            {pokemon.name} {"\n"}Info...
+          </S.Name>
           <Loading size={80} />
         </S.LoadingContainer>
       ) : (
