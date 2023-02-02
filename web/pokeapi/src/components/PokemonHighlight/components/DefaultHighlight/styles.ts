@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.COLORS.BORDER};
+  background: ${({ theme }) => theme.COLORS.BORDER};
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_GRADIENT_LINEAR};
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_GRADIENT_WEBKIT};
   color: ${({ theme }) => theme.COLORS.BACKGROUND};
   border-radius: 50px;
   margin: 2rem;
@@ -43,6 +45,9 @@ export const ContainerPokemonImage = styled.div`
 `;
 
 export const Image = styled.img`
+  position: relative;
+  bottom: -5em;
+  left: 35em;
   width: 50em;
   filter: ${({ theme }) => `drop-shadow(0 -2mm 4mm ${theme.COLORS.BORDER})`};
 `;

@@ -8,5 +8,9 @@ export const lightTheme: themeType = {
     SCROLLBAR_THUMB: "#de1b4a",
     FONTCOLOR: "#393e46",
     LOADING: "#0f0",
+    BACKGROUND_GRADIENT_LINEAR:
+      "linear-gradient(to right, rgba(222, 27, 74, 0.5), rgba(244, 224, 34, 0.5))",
+    BACKGROUND_GRADIENT_WEBKIT:
+      "-webkit-linear-gradient(to right, rgba(222, 27, 74, 0.5), rgba(244, 224, 34, 0.5))",
   },
 };

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme.COLORS.BORDER};
+  background: ${({ theme }) => theme.COLORS.BORDER};
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_GRADIENT_LINEAR};
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_GRADIENT_WEBKIT};
   color: ${({ theme }) => theme.COLORS.BACKGROUND};
   border-radius: 50px;
   margin: 2rem;

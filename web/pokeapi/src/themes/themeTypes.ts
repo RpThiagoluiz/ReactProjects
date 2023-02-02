@@ -6,6 +6,8 @@ export type themeType = {
     LOADING: string;
     SCROLLBAR_TRACK: string;
     SCROLLBAR_THUMB: string;
+    BACKGROUND_GRADIENT_LINEAR: string;
+    BACKGROUND_GRADIENT_WEBKIT: string;
   };
 };
 
