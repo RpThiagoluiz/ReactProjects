@@ -1,1 +1,1 @@
-![app animation](/.github/images/i.gif)
+![app animation](/mobile/readpercentage/.github/images/i.gif)
